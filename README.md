@@ -16,7 +16,7 @@
 
 ---
 
-## 🖼️ Demo Preview
+## 🖼️ Demo Preview / ScreenShorts
 
 comming Soon
 
@@ -71,12 +71,14 @@ comming Soon
   Open in browser
   Visit: http://localhost:5173
 ```
+---
 
-##📝 License
+## 📝 License
 This project is a mockup and open for learning or portfolio use. Not for commercial deployment.
 
-##🙋‍♂️ Author
+## 🙋‍♂️ Author
 Manish Borah
-📍 Front-End Developer (React & JavaScript) – Noida
-🛠️ Built using React + Vite
+-  Front-End Developer
+- 📍 Noid,UP
+- 🛠️ Built using React + Vite
 
