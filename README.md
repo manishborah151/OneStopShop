@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 Features
+## 🚀 Upcomming Features
 
 - 🔄 **Responsive Navbar** with dropdowns and account popup
 - 🍔 **Hamburger menu** for smaller screens
@@ -18,7 +18,7 @@
 
 ## 🖼️ Demo Preview
 
-![Landing Page Screenshot](./public/slide1.jpg)
+comming Soon
 
 ---
 
@@ -31,7 +31,7 @@
 ---
 
 ## 🏗️ Project Structure
-
+```
   src/
   ├── components/
   │   ├── Navbar.jsx
@@ -47,7 +47,7 @@
   ├── slide1.jpg
   ├── slide2.jpg
   └── ....
-
+```
   ---
 
 ## 🔧 Setup Instructions
