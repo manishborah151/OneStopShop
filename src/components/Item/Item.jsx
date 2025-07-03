@@ -1,12 +1,9 @@
-import React, {useContext} from "react";
 import "./Item.css";
 import {ShoppingCart, Star} from "lucide-react";
 import {Link} from "react-router-dom";
 import {ShopContext} from "../../Context/ShopContext";
 
 const Item = (props) => {
-  const {theme} = useContext(ShopContext);
-
   return (
     <div className="product-card">
       <Link to={`/product/${props.id}`} className="product-image-container ">

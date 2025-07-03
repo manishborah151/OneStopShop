@@ -1,4 +1,4 @@
-import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import {Sparkles} from "lucide-react";
 import "./ReviewSection.css";
 
 const reviews = [
@@ -22,20 +22,6 @@ const reviews = [
 ];
 
 export default function ReviewSection() {
-  const renderStars = (rating) => {
-    const stars = [];
-    for (let i = 1; i <= 5; i++) {
-      if (i <= rating) {
-        stars.push(<FaStar key={i} />);
-      } else if (i === Math.ceil(rating) && !Number.isInteger(rating)) {
-        stars.push(<FaStarHalfAlt key={i} />);
-      } else {
-        stars.push(<FaRegStar key={i} />);
-      }
-    }
-    return stars;
-  };
-
   return (
     <div>
       <div className="review-section-container">
@@ -52,7 +38,7 @@ export default function ReviewSection() {
                     <span className="user-name">{review.user}</span>
                   </div>
                   <div className="review-card-rating">
-                    {renderStars(review.rating)}
+                    <Sparkles />
                   </div>
                 </div>
                 <div>{review.review}</div>

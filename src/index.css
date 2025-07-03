@@ -51,6 +51,11 @@
   --success: hsl(147 19% 36%);
   --info: hsl(217 22% 41%);
 }
+.app {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 
 a {
   font-weight: 500;

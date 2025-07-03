@@ -21,25 +21,42 @@ const Footer = () => {
 
   return (
     <div className="footer">
+      <hr className={`hr`} />
       <div className="footer-logo">
         <Link className="nav-logo-link" to="/" onClick={handleLogoClick}>
           <Slack />
           <p className={`footer`}>ShopNex</p>
         </Link>
       </div>
-      <ul className={"footer-links_" + theme}>
-        <li>Company</li>
-        <li>Products</li>
-        <li>Offices</li>
+      <ul className={"footer-links"}>
         <li>
           {" "}
-          <Link className={`link_${theme}`} to="/about " onClick={scrollToTop}>
+          <Link className={`link`} to="/about " onClick={scrollToTop}>
+            {" "}
+            Company
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link className={`link`} to="/about " onClick={scrollToTop}>
+            Products
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link className={`link`} to="/about " onClick={scrollToTop}>
+            Offices
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link className={`link`} to="/about " onClick={scrollToTop}>
             About
           </Link>
         </li>
         <li>
           {" "}
-          <Link className={`link_${theme}`} to="/contact" onClick={scrollToTop}>
+          <Link className={`link`} to="/contact" onClick={scrollToTop}>
             Contact Us
           </Link>
         </li>
@@ -49,8 +66,9 @@ const Footer = () => {
           <Instagram />
         </div>
       </div>
-      <div className={`footer-copyright_${theme}`}>
-        <hr className={`hr_${theme}`} />
+
+      <div className={`footer-copyright`}>
+        <hr className={`hr`} />
         <p>Copyright @ {new Date().getFullYear()} - All Rights Reserved</p>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React, {useContext, useState} from "react";
 import "./Navbar.css";
-import {ShoppingBasket, Moon, Sun, Slack} from "lucide-react";
+import {ShoppingCart, Moon, Sun, Slack, CircleUser} from "lucide-react";
 import uselocalstorage from "use-local-storage";
 import {Link} from "react-router-dom";
 import {ShopContext} from "../../Context/ShopContext";
@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <div className={`navbar`} id="nav">
       <div className="nav-logo">
-        <Link className="nav-logo-link" to="/u">
+        <Link className="nav-logo-link" to="/OneStopShop">
           <Slack />
           <p className="pnav">OneStopShop</p>
         </Link>
@@ -30,43 +30,45 @@ const Navbar = () => {
             setMenu("shop");
           }}
         >
-          <Link to="/">Shop</Link>
+          <Link to="/OneStopShop">HOME</Link>
           {menu === "shop" ? <hr /> : <></>}
         </li>
         <li
-          className={menu === "men" ? "active" : ""}
+          className={menu === "vape" ? "active" : ""}
           onClick={() => {
-            setMenu("men");
+            setMenu("vape");
           }}
         >
-          <Link to="/men">Men</Link>
-          {menu === "men" ? <hr /> : <></>}
+          <Link to="/OneStopShop/vape">VAPES</Link>
+          {menu === "vape" ? <hr /> : <></>}
         </li>
         <li
-          className={menu === "women" ? "active" : ""}
+          className={menu === "hookha" ? "active" : ""}
           onClick={() => {
-            setMenu("women");
+            setMenu("hookha");
           }}
         >
-          <Link to="/women">Women</Link>
-          {menu === "women" ? <hr /> : <></>}
+          <Link to="/OneStopShop/hookha">HOOKHAH ESSENTIALS</Link>
+          {menu === "hookha" ? <hr /> : <></>}
         </li>
         <li
-          className={menu === "kids" ? "active" : ""}
+          className={menu === "smoking" ? "active" : ""}
           onClick={() => {
-            setMenu("kids");
+            setMenu("smoking");
           }}
         >
-          <Link to="/kids">Kids</Link>
-          {menu === "kids" ? <hr /> : <></>}
+          <Link to="/OneStopShop/smoking">SMOKING ESSENTIALS</Link>
+          {menu === "smoking" ? <hr /> : <></>}
         </li>
       </ul>
       <div className="nav-login-cart">
         <Link to="/login">
-          <button className="log_btn">Login</button>
+          <button className="log_btn">
+            <CircleUser size={18} />
+          </button>
         </Link>
         <Link to="/cart">
-          <ShoppingBasket className="cart" />
+          <ShoppingCart size={18} className="cart" />
         </Link>
         <div className="nav-cart-count">{getTotalCartItems()}</div>
         <div className="theme-btn">

@@ -8,13 +8,13 @@ import Footer from "../Components/Footer/Footer";
 
 const Shop = () => {
   return (
-    <div>
+    <>
       <Hero />
       <Popular />
       <Offers />
       <NewCollections />
       {/* <EmailSubscribe /> */}
-    </div>
+    </>
   );
 };
 

@@ -1,15 +1,15 @@
-import React, { useContext, useState } from "react";
+import React, {useContext, useState} from "react";
 import "./ProductDisplay.css";
-import start_icon from "../Assets/star_icon.png";
-import start_dull_icon from "../Assets/star_dull_icon.png";
-import { useLinkClickHandler } from "react-router-dom";
-import { ShopContext } from "../../Context/ShopContext";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import {Sparkles} from "lucide-react";
+
+import {useLinkClickHandler} from "react-router-dom";
+import {ShopContext} from "../../Context/ShopContext";
+import {ToastContainer, toast} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ProductDisplay = (props) => {
-  const { product } = props;
-  const { addToCart } = useContext(ShopContext);
+  const {product} = props;
+  const {addToCart} = useContext(ShopContext);
 
   const [selectedSize, setSelectedSize] = useState("S"); // State for selected size
   const [selectedQuantity, setSelectedQuantity] = useState(1); // State for selected quantity
@@ -21,7 +21,7 @@ const ProductDisplay = (props) => {
   const handleQuantityChange = (quantity) => {
     setSelectedQuantity(quantity);
   };
- const {theme}=useContext(ShopContext);
+  const {theme} = useContext(ShopContext);
   return (
     <div className="productdisplay">
       <div className="productdisplay-left">
@@ -38,11 +38,7 @@ const ProductDisplay = (props) => {
       <div className="productdisplay-right">
         <h1 className={`ph1_${theme}`}>{product.name}</h1>
         <div className="productdisplay-right-stars">
-          <img src={start_icon} alt="" />
-          <img src={start_icon} alt="" />
-          <img src={start_icon} alt="" />
-          <img src={start_icon} alt="" />
-          <img src={start_dull_icon} alt="" />
+          <Sparkles />
           <p className={`ph1_${theme}`}>(122)</p>
         </div>
         <div className="productdisplay-right-prices">
@@ -115,20 +111,20 @@ const ProductDisplay = (props) => {
         </div>
         <button
           onClick={() => {
-            addToCart(product.id, selectedSize, selectedQuantity)
-            toast.success("Item added to cart",{
-              autoClose:1500,
-              closeButton: false
-            })
+            addToCart(product.id, selectedSize, selectedQuantity);
+            toast.success("Item added to cart", {
+              autoClose: 1500,
+              closeButton: false,
+            });
           }}
-        > 
+        >
           ADD TO CART
         </button>
-        <ToastContainer toastStyle={{fontWeight:"bold",marginTop:"68px"}}/>
-        <p className={"productdisplay-right-category pdiv_"+theme}>
+        <ToastContainer toastStyle={{fontWeight: "bold", marginTop: "68px"}} />
+        <p className={"productdisplay-right-category pdiv_" + theme}>
           <span>Category : </span>Women, T-shirt, Crop Top
         </p>
-        <p className={"productdisplay-right-category pdiv_"+theme}>
+        <p className={"productdisplay-right-category pdiv_" + theme}>
           <span>Tags : </span>Modern, Latest
         </p>
       </div>

@@ -1,16 +1,17 @@
-import React, { useContext } from 'react'
-import './Breadcrum.css'
-import arrow_icon from '../Assets/breadcrum_arrow.png'
-import { ShopContext } from '../../Context/ShopContext';
+import React, {useContext} from "react";
+import "./Breadcrum.css";
+import {ChevronRight} from "lucide-react";
+import {ShopContext} from "../../Context/ShopContext";
 
 const Breadcrum = (props) => {
-    const {product}=props;
-    const {theme}=useContext(ShopContext);
+  const {product} = props;
+  const {theme} = useContext(ShopContext);
   return (
     <div className={`breadcrum_${theme}`}>
-      HOME <img src={arrow_icon} alt="" />SHOP<img src={arrow_icon} alt="" /> {product.category} <img src={arrow_icon} alt="" /> {product.name}
+      HOME <ChevronRight /> SHOP <ChevronRight /> {product.category}{" "}
+      <ChevronRight /> {product.name}
     </div>
-  )
-}
+  );
+};
 
-export default Breadcrum
+export default Breadcrum;

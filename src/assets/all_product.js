@@ -81,7 +81,7 @@ let all_product = [
   {
     id: 1,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p1_img,
     new_price: 50.0,
     old_price: 80.5,
@@ -91,7 +91,7 @@ let all_product = [
   {
     id: 2,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p2_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -101,7 +101,7 @@ let all_product = [
   {
     id: 3,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p3_img,
     new_price: 60.0,
     old_price: 100.5,
@@ -111,7 +111,7 @@ let all_product = [
   {
     id: 4,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p4_img,
     new_price: 100.0,
     old_price: 150.0,
@@ -121,7 +121,7 @@ let all_product = [
   {
     id: 5,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p5_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -131,7 +131,7 @@ let all_product = [
   {
     id: 6,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p6_img,
     new_price: 75.0,
     old_price: 140.5,
@@ -141,7 +141,7 @@ let all_product = [
   {
     id: 7,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p7_img,
     new_price: 95.0,
     old_price: 130.5,
@@ -151,7 +151,7 @@ let all_product = [
   {
     id: 8,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p8_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -161,7 +161,7 @@ let all_product = [
   {
     id: 9,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p9_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -171,7 +171,7 @@ let all_product = [
   {
     id: 10,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p10_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -181,7 +181,7 @@ let all_product = [
   {
     id: 11,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p11_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -191,7 +191,7 @@ let all_product = [
   {
     id: 12,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p12_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -201,7 +201,7 @@ let all_product = [
   {
     id: 13,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p13_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -211,7 +211,7 @@ let all_product = [
   {
     id: 14,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p14_img,
     new_price: 95.0,
     old_price: 120.5,
@@ -221,7 +221,7 @@ let all_product = [
   {
     id: 15,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p15_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -231,7 +231,7 @@ let all_product = [
   {
     id: 16,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p16_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -241,7 +241,7 @@ let all_product = [
   {
     id: 17,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p17_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -251,7 +251,7 @@ let all_product = [
   {
     id: 18,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p18_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -261,7 +261,7 @@ let all_product = [
   {
     id: 19,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p19_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -271,7 +271,7 @@ let all_product = [
   {
     id: 20,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p20_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -281,7 +281,7 @@ let all_product = [
   {
     id: 61,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p61_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -291,7 +291,7 @@ let all_product = [
   {
     id: 62,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p62_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -301,7 +301,7 @@ let all_product = [
   {
     id: 63,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p63_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -311,7 +311,7 @@ let all_product = [
   {
     id: 64,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p64_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -321,7 +321,7 @@ let all_product = [
   {
     id: 65,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p65_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -331,7 +331,7 @@ let all_product = [
   {
     id: 66,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p66_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -341,7 +341,7 @@ let all_product = [
   {
     id: 67,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p67_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -351,7 +351,7 @@ let all_product = [
   {
     id: 68,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p68_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -361,7 +361,7 @@ let all_product = [
   {
     id: 69,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p69_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -371,7 +371,7 @@ let all_product = [
   {
     id: 70,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p70_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -381,7 +381,7 @@ let all_product = [
   {
     id: 71,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p71_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -391,7 +391,7 @@ let all_product = [
   {
     id: 72,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    category: "vape",
     image: p72_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -401,7 +401,7 @@ let all_product = [
   {
     id: 21,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p21_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -411,7 +411,7 @@ let all_product = [
   {
     id: 22,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p22_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -421,7 +421,7 @@ let all_product = [
   {
     id: 23,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p23_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -431,7 +431,7 @@ let all_product = [
   {
     id: 24,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p24_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -441,7 +441,7 @@ let all_product = [
   {
     id: 25,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p25_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -451,7 +451,7 @@ let all_product = [
   {
     id: 26,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p26_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -461,7 +461,7 @@ let all_product = [
   {
     id: 27,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p27_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -471,7 +471,7 @@ let all_product = [
   {
     id: 28,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p28_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -481,7 +481,7 @@ let all_product = [
   {
     id: 29,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p29_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -491,7 +491,7 @@ let all_product = [
   {
     id: 30,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p30_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -501,7 +501,7 @@ let all_product = [
   {
     id: 31,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p31_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -511,7 +511,7 @@ let all_product = [
   {
     id: 32,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p32_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -522,7 +522,7 @@ let all_product = [
   {
     id: 33,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p33_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -532,7 +532,7 @@ let all_product = [
   {
     id: 34,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p34_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -542,7 +542,7 @@ let all_product = [
   {
     id: 35,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p35_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -552,7 +552,7 @@ let all_product = [
   {
     id: 36,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p36_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -562,7 +562,7 @@ let all_product = [
   {
     id: 37,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p37_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -572,7 +572,7 @@ let all_product = [
   {
     id: 38,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p38_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -582,7 +582,7 @@ let all_product = [
   {
     id: 39,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p39_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -592,7 +592,7 @@ let all_product = [
   {
     id: 40,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p40_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -602,7 +602,7 @@ let all_product = [
   {
     id: 53,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p53_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -612,7 +612,7 @@ let all_product = [
   {
     id: 54,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p54_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -622,7 +622,7 @@ let all_product = [
   {
     id: 55,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p55_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -632,7 +632,7 @@ let all_product = [
   {
     id: 56,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p56_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -643,7 +643,7 @@ let all_product = [
   {
     id: 57,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p57_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -653,7 +653,7 @@ let all_product = [
   {
     id: 58,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p58_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -663,7 +663,7 @@ let all_product = [
   {
     id: 59,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p59_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -673,7 +673,7 @@ let all_product = [
   {
     id: 60,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p60_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -683,7 +683,7 @@ let all_product = [
   {
     id: 73,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p73_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -693,7 +693,7 @@ let all_product = [
   {
     id: 74,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p74_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -703,7 +703,7 @@ let all_product = [
   {
     id: 75,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p75_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -713,7 +713,7 @@ let all_product = [
   {
     id: 76,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    category: "smoking",
     image: p76_img,
     new_price: 850.0,
     old_price: 1200.5,
@@ -723,7 +723,7 @@ let all_product = [
   {
     id: 41,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    category: "hookha",
     image: p41_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -733,7 +733,7 @@ let all_product = [
   {
     id: 42,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    category: "hookha",
     image: p42_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -743,7 +743,7 @@ let all_product = [
   {
     id: 43,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    category: "hookha",
     image: p43_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -753,7 +753,7 @@ let all_product = [
   {
     id: 44,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    category: "hookha",
     image: p44_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -763,7 +763,7 @@ let all_product = [
   {
     id: 45,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    category: "hookha",
     image: p45_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -773,7 +773,7 @@ let all_product = [
   {
     id: 46,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    category: "hookha",
     image: p46_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -783,7 +783,7 @@ let all_product = [
   {
     id: 47,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    category: "hookha",
     image: p47_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -793,7 +793,7 @@ let all_product = [
   {
     id: 48,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    category: "hookha",
     image: p48_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -803,7 +803,7 @@ let all_product = [
   {
     id: 49,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    category: "hookha",
     image: p49_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -813,7 +813,7 @@ let all_product = [
   {
     id: 50,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    category: "hookha",
     image: p50_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -823,7 +823,7 @@ let all_product = [
   {
     id: 51,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    category: "hookha",
     image: p51_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -833,7 +833,7 @@ let all_product = [
   {
     id: 52,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    category: "hookha",
     image: p52_img,
     new_price: 85.0,
     old_price: 120.5,
