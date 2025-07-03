@@ -1,16 +1,47 @@
 import React, {useState, useEffect} from "react";
-
+import ProductCard from "../components/ProductCard";
+import img1 from "../assets/imgs/prodBanners/igetbar.jpg";
+import img2 from "../assets/imgs/prodBanners/igetbox.jpg";
+import img3 from "../assets/imgs/prodBanners/igetlegend.webp";
+import img4 from "../assets/imgs/prodBanners/igetoatWa.jpg";
+import img5 from "../assets/imgs/prodBanners/igetking.jpg";
+import img6 from "../assets/imgs/prodBanners/igetpro.jpg";
+import prod1 from "../assets/imgs/products/prod1.png";
+import prod2 from "../assets/imgs/products/prod2.png";
+import prod3 from "../assets/imgs/products/prod3.png";
+import prod4 from "../assets/imgs/products/prod4.png";
+import prod5 from "../assets/imgs/products/prod5.png";
 import "./LandingPage.css";
 
-const slideshowImages = [
-  "/src/assets/imgs/igetbar.jpg",
-  "/src/assets/imgs/igetbox.jpg",
-  "/src/assets/imgs/igetlegend.webp",
-  "/src/assets/imgs/igetoatWa.jpg",
-  "/src/assets/imgs/igetking.jpg",
-  "/src/assets/imgs/igetpro.jpg",
-];
+const slideshowImages = [img1, img2, img3, img4, img5, img6];
 
+const products = [
+  {
+    id: 1,
+    name: "Mint Vape 2000",
+    image: [prod1],
+  },
+  {
+    id: 2,
+    name: "Hookah Flavour Set",
+    image: [prod2],
+  },
+  {
+    id: 3,
+    name: "Charcoal Pack",
+    image: [prod3],
+  },
+  {
+    id: 4,
+    name: "Vape Pod Refill",
+    image: [prod4],
+  },
+  {
+    id: 5,
+    name: "Vape Pod Refill",
+    image: [prod5],
+  },
+];
 export default function LandingPage() {
   const [current, setCurrent] = useState(0);
 
@@ -66,10 +97,11 @@ export default function LandingPage() {
       </section>
 
       <section className="cta-section">
-        <h2>Ready to explore?</h2>
-        <a href="/shop" className="cta-btn">
-          Browse Shop
-        </a>
+        <div className="product-slider">
+          {products.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
       </section>
     </div>
   );
