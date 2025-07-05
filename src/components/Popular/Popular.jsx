@@ -1,15 +1,14 @@
-import React, {useContext} from "react";
+import React from "react";
 import "./Popular.css";
 import data_product from "../../assets/data";
 import Item from "../Item/Item";
 import {ShopContext} from "../../Context/ShopContext";
 
 const Popular = () => {
-  const {theme} = useContext(ShopContext);
   return (
     <div className="popular">
-      <h1 className={`h1p_${theme}`}>POPULAR IN WOMEN</h1>
-      <hr className={`hrp_${theme}`} />
+      <h1 className="h1p">NEW ARIVALS</h1>
+      <hr className="hrp" />
       <div className="popular-item">
         {data_product.map((item, i) => {
           return (

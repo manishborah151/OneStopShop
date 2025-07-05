@@ -1,19 +1,21 @@
 import React from "react";
+import "./CSS/Shop.css";
 import Hero from "../Components/Hero/Hero";
 import Popular from "../Components/Popular/Popular";
 import Offers from "../Components/Offers/Offers";
 import NewCollections from "../Components/NewCollections/NewCollections";
 // import EmailSubscribe from "../components/EmailSubscribe/EmailSubscribe";
-import Footer from "../Components/Footer/Footer";
 
 const Shop = () => {
   return (
     <>
-      <Hero />
-      <Popular />
-      <Offers />
-      <NewCollections />
-      {/* <EmailSubscribe /> */}
+      <div className="shop">
+        <Hero />
+        <Popular />
+        <Offers />
+        <NewCollections />
+        {/* <EmailSubscribe /> */}
+      </div>
     </>
   );
 };

@@ -1,91 +1,108 @@
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  justify-self: center;
   position: fixed;
-  box-shadow: 0 1px 3px -2px var(--border);
-  width: 100%;
+  margin: 0 auto;
+  width: 90%;
+  top: 1rem;
+  border-radius: 20px;
   height: 60px;
-  background-color: var(--bg-dark);
-  backdrop-filter: blur(2px);
+
+  box-shadow: -3px 3px 6px var(--border);
+  background-color: hsl(from var(--bg-dark) h s l / 0.2);
+  backdrop-filter: blur(4px);
   z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-visible {
+  transform: translateY(0);
+}
+
+.navbar-hidden {
+  transform: translateY(-100%);
 }
 .nav-logo {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-left: 1rem;
 }
+
 .nav-logo-link {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: var(--text);
-  gap: 20px;
-}
-.nav-logo {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
+  gap: 10px;
+  text-shadow: 1px 1px 6px var(--border);
 }
+
 .nav-menu {
   display: flex;
   align-items: center;
-  list-style: none;
-  gap: 50px;
   color: var(--text);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
+  gap: 2rem;
 }
+
 .nav-menu li {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* gap: 3px; */
+  gap: 3px;
 
   cursor: pointer;
 }
+
 .nav-menu li a {
   text-decoration: none;
   color: var(--text);
+  text-shadow: 1px 1px 6px var(--border);
 }
-.nav-menu hr {
-  border: none;
-  width: 80%;
-  height: 3px;
-  border-radius: 10px;
-  background: var(--info);
+.nav-menu li.active a {
+  color: var(--primary);
 }
+
 .nav-login-cart {
   display: flex;
   align-items: center;
-  gap: 45px;
-}
-.nav-login-cart .log_btn {
-  padding: 6px 18px;
-  outline: none;
-  border: 1px solid var(--border);
-  border-radius: 75px;
+  gap: 2rem;
+  margin-right: 1rem;
+
   color: var(--text);
-  font-size: 1rem;
-  font-weight: 500;
-  background: var(--bg-light);
+}
+.nav-login-cart button {
+  background: none;
+  border: none;
   cursor: pointer;
 }
-.nav-login-cart .log_btn:active {
-  background: var(--bg);
+
+.nav-login-cart a,
+.theme-btn {
+  cursor: pointer;
+  padding: 1rem;
 }
+
 .nav-cart-count {
-  width: 22px;
-  height: 22px;
+  width: 14px;
+  height: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -35px;
-  margin-left: -55px;
+  margin-top: -27px;
+  margin-left: -46px;
   border-radius: 11px;
-  font-size: 14px;
-  background: var(--primary);
+  font-size: 12px;
+  background: hsl(from var(--primary) h s l / 0.8);
   color: var(--text);
 }
+/*
 .dark_btn {
   width: 50px;
   height: 50px;
@@ -104,10 +121,6 @@ button {
   border: none;
 }
 
-.nav-menu hr {
-  margin: 0;
-}
 
-.nav-menu li.active a {
-  color: var(--primary);
-}
+
+*/

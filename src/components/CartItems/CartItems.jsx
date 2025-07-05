@@ -4,7 +4,7 @@ import {ShopContext} from "../../Context/ShopContext";
 import {X, Bubbles} from "lucide-react";
 
 const CartItems = () => {
-  const {cartItems, removeFromCart, getTotalCartAmount, theme} =
+  const {cartItems, removeFromCart, getTotalCartAmount} =
     useContext(ShopContext);
 
   // Function to calculate the total price for each item considering the quantity
@@ -17,7 +17,7 @@ const CartItems = () => {
 
   return (
     <div className="cartitems">
-      <div className={`cartitems-format-main ci_${theme}`}>
+      <div className={`cartitems-format-main ci`}>
         <p>Products</p>
         <p>Title</p>
         <p>Price</p>
@@ -43,9 +43,7 @@ const CartItems = () => {
       {cartItems.map((item) => {
         return (
           <div key={item.id}>
-            <div
-              className={`cartitems-format cartitems-format-main ci_${theme}`}
-            >
+            <div className={`cartitems-format cartitems-format-main ci`}>
               <img
                 src={item.image}
                 alt=""
@@ -69,7 +67,7 @@ const CartItems = () => {
         );
       })}
       <div className="cartitems-down">
-        <div className={`cartitems-total ci_${theme}`}>
+        <div className={`cartitems-total ci`}>
           <h1>Cart Totals</h1>
           <div>
             <div className="cartitems-total-item">

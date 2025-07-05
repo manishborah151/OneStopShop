@@ -1,34 +1,21 @@
 .popular {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 3px;
-  margin-bottom: 100px;
-}
-.popular .h1p_dark {
-  color: #171717;
-  font-size: 30px;
-  font-weight: 600;
 }
 
-.h1p_light {
-  color: white;
-  font-size: 30px;
-  font-weight: 600;
+.h1p {
+  color: var(--text);
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-.popular .hrp_dark {
+.hrp {
   width: 200px;
-  height: 6px;
+  height: 4px;
   border-radius: 10px;
-  background: #252525;
-}
-
-.hrp_light {
-  width: 200px;
-  height: 6px;
-  border-radius: 10px;
-  background: white;
 }
 
 .popular-item {
