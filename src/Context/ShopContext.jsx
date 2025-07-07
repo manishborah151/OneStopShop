@@ -6,32 +6,49 @@ export const ShopContext = createContext(null);
 const ShopContextProvider = (props) => {
   const [cartItems, setcartItems] = useState([]);
 
-  const addToCart = (itemId, size, quantity) => {
-    const existingCartItemIndex = cartItems.findIndex(
+  const addToCart = (itemId, size, quantity = 1) => {
+    const existingIndex = cartItems.findIndex(
       (item) => item.id === itemId && item.size === size
     );
 
-    if (existingCartItemIndex !== -1) {
-      const updatedCartItems = cartItems.map((item, index) => {
-        if (index === existingCartItemIndex) {
-          return {
-            ...item,
-            quantity: item.quantity + quantity,
-          };
-        }
-        return item;
-      });
-      setcartItems(updatedCartItems);
+    if (existingIndex !== -1) {
+      const updatedCart = cartItems.map((item, idx) =>
+        idx === existingIndex
+          ? {...item, quantity: item.quantity + quantity}
+          : item
+      );
+      setcartItems(updatedCart);
     } else {
-      const cartProduct = all_product.find((product) => product.id === itemId);
-      cartProduct.size = size;
-      cartProduct.quantity = quantity;
+      const product = all_product.find((product) => product.id === itemId);
+      if (!product) return;
+
+      const cartProduct = {
+        ...product,
+        size,
+        quantity,
+      };
+
       setcartItems([...cartItems, cartProduct]);
     }
   };
 
-  const removeFromCart = (itemId) => {
-    setcartItems(cartItems.filter((product) => product.id !== itemId));
+  const removeFromCart = (itemId, size, removeAll = false) => {
+    const existingIndex = cartItems.findIndex(
+      (item) => item.id === itemId && item.size === size
+    );
+
+    if (existingIndex === -1) return;
+
+    const item = cartItems[existingIndex];
+
+    if (removeAll || item.quantity <= 1) {
+      setcartItems(cartItems.filter((_, idx) => idx !== existingIndex));
+    } else {
+      const updatedCart = cartItems.map((item, idx) =>
+        idx === existingIndex ? {...item, quantity: item.quantity - 1} : item
+      );
+      setcartItems(updatedCart);
+    }
   };
 
   const getTotalCartAmount = () => {
@@ -41,19 +58,17 @@ const ShopContextProvider = (props) => {
     );
   };
 
-  const getTotalCartItems = () => {
-    return cartItems.length;
-  };
+  const getTotalCartItems = () => cartItems.length;
 
   const contextValue = {
     all_product,
     cartItems,
-
     addToCart,
     removeFromCart,
     getTotalCartAmount,
     getTotalCartItems,
   };
+
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}

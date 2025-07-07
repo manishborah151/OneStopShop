@@ -1,58 +1,118 @@
-import React from "react";
-import * as Components from "./Components";
+import React, {useState} from "react";
 
 const LoginSignup = () => {
-  const [signIn, toggle] = React.useState(true);
+  const [isSignup, setIsSignup] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+    phone: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({...formData, [e.target.name]: e.target.value});
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (isSignup) {
+      console.log("Signing up with data:", formData);
+      alert(`Signed up as ${formData.name} (${formData.email})`);
+    } else {
+      console.log("Logging in with data:", {
+        email: formData.email,
+        password: formData.password,
+      });
+      alert(`Logged in as ${formData.email}`);
+    }
+  };
+
+  const handleGoogleLogin = () => {
+    console.log("Google login clicked");
+    alert("Mock Google login successful!");
+  };
+
+  const handleFacebookLogin = () => {
+    console.log("Facebook login clicked");
+    alert("Mock Facebook login successful!");
+  };
+
+  const handlePhoneLogin = () => {
+    const phone = formData.phone || prompt("Enter your phone number:");
+    if (phone) {
+      console.log(`Phone login initiated for ${phone}`);
+      alert(`Mock login sent to phone: ${phone}`);
+    } else {
+      alert("Phone number is required for phone login.");
+    }
+  };
+
   return (
-    <Components.div>
-      <Components.Container>
-        <Components.SignUpContainer signinIn={signIn}>
-          <Components.Form>
-            <Components.Title>Create Account</Components.Title>
-            <Components.Input type="text" placeholder="Name" />
-            <Components.Input type="email" placeholder="Email" />
-            <Components.Input type="password" placeholder="Password" />
-            <Components.Button>Sign Up</Components.Button>
-          </Components.Form>
-        </Components.SignUpContainer>
+    <div className="login-Container">
+      <h2>{isSignup ? "Sign Up" : "Login"}</h2>
 
-        <Components.SignInContainer signinIn={signIn}>
-          <Components.Form>
-            <Components.Title>Sign in</Components.Title>
-            <Components.Input type="email" placeholder="Email" />
-            <Components.Input type="password" placeholder="Password" />
-            <Components.Anchor href="#">
-              Forgot your password?
-            </Components.Anchor>
-            <Components.Button>Sigin In</Components.Button>
-          </Components.Form>
-        </Components.SignInContainer>
+      <form onSubmit={handleSubmit} className="form">
+        {isSignup && (
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        )}
 
-        <Components.OverlayContainer signinIn={signIn}>
-          <Components.Overlay signinIn={signIn}>
-            <Components.LeftOverlayPanel signinIn={signIn}>
-              <Components.Title>Welcome Back!</Components.Title>
-              <Components.Paragraph>
-                To keep connected with us please login with your personal info
-              </Components.Paragraph>
-              <Components.GhostButton onClick={() => toggle(true)}>
-                Sign In
-              </Components.GhostButton>
-            </Components.LeftOverlayPanel>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
 
-            <Components.RightOverlayPanel signinIn={signIn}>
-              <Components.Title>Hello, Friend!</Components.Title>
-              <Components.Paragraph>
-                Enter Your personal details and start journey with us
-              </Components.Paragraph>
-              <Components.GhostButton onClick={() => toggle(false)}>
-                Sigin Up
-              </Components.GhostButton>
-            </Components.RightOverlayPanel>
-          </Components.Overlay>
-        </Components.OverlayContainer>
-      </Components.Container>
-    </Components.div>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          value={formData.password}
+          onChange={handleChange}
+          required
+        />
+
+        {isSignup && (
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number (optional)"
+            value={formData.phone}
+            onChange={handleChange}
+          />
+        )}
+
+        <button type="submit">{isSignup ? "Sign Up" : "Login"}</button>
+      </form>
+      <span className="or">OR</span>
+      <div className="socialButtons">
+        <button onClick={handleGoogleLogin} className="scl-btn google-btn">
+          Continue with Google
+        </button>
+        <button onClick={handleFacebookLogin} className="scl-btn facebook-btn">
+          Continue with Facebook
+        </button>
+        <button onClick={handlePhoneLogin} className="scl-btn phone-btn">
+          Continue with Phone
+        </button>
+      </div>
+
+      <p>
+        {isSignup ? "Already have an account?" : "Don't have an account?"}{" "}
+        <button onClick={() => setIsSignup(!isSignup)} className="toggle">
+          {isSignup ? "Login" : "Sign Up"}
+        </button>
+      </p>
+    </div>
   );
 };
 
